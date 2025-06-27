@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 60px 30px;
+    background-color:darkslateblue;
+    color: white;
+    
+}
+h1{
+    margin: 0;
+    color: white
+}
+#heading-second {
+    color: aqua;
+}
+#container{
+    display: flex;
+    justify-content:flex-start;
+}
+button {
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+.password-boxes {
+    display: flex;
+    margin: 20px 0;
+    height: 30px;
+    justify-content: center;
+    gap: 40px;
+}
+
+#output-one, #output-two{
+   background-color: #2d3748;
+    text-align: center;
+    margin: auto auto;
+    color: #10B981;
+    padding: 12px 24px;
+    width: 120px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+}
