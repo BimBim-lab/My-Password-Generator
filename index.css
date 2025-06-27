@@ -1,13 +1,22 @@
 body {
     margin: 0;
     padding: 60px 30px;
-    background-color:darkslateblue;
+    background-color:rgb(6, 39, 61);
     color: white;
     
 }
+.container {
+    width: 400px;
+    padding: 60px 40px ;
+    margin: 40px auto;
+    background-color: rgb(65, 65, 168);
+    border-radius: 14px;
+}
 h1{
     margin: 0;
-    color: white
+    color: rgb(255, 255, 255);
+    font-size: 38;
+    font-weight: bold;
 }
 #heading-second {
     color: aqua;
@@ -25,20 +34,39 @@ button {
 }
 .password-boxes {
     display: flex;
-    margin: 20px 0;
-    height: 30px;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }
 
-#output-one, #output-two{
-   background-color: #2d3748;
+#output-one {
+   background-color: #1d2635;
     text-align: center;
-    margin: auto auto;
-    color: #10B981;
-    padding: 12px 24px;
-    width: 120px;
+    color: #eef3f8;
+    padding: 12px 0;
+    width: 100%;
     border-radius: 8px;
     font-family: monospace;
     font-size: 14px;
+}
+
+#copy-btn{
+margin: 0px auto;
+width: 100%;
+}
+
+#security-checklist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 5;
+}
+
+input[type="range"]{
+    width:100%;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    cursor: pointer;
 }
