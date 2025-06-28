@@ -5,23 +5,27 @@
     <body>
         <div class="container">
             <h1 id="heading-first">Generate a random Password</h1>
-            <h3>Security Checklist:</h3>
+            <h3>Security Checklist</h3>
+            <hr style="border: 1px solid white;">
             <div id="security-checklist">
-                <input type="range" min="6" max="64" value="12" id="length" />
+                <div id="pass-length">
+                    <label id="length-number">Password Length: <span id="length-val">12</span></label>
+                    <input type="range" min="6" max="32" value="12" id="length" />
+                </div>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="check-Uppercase" onclick="genUppercase()">
                     <span>Include Uppercase</span>
                 </div>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="check-Lowercase" onclick="genLowerCase()">
                     <span>Include Lowercase</span>
                 </div>
                 <div>
-                    <input type="checkbox">
-                    <span>Include Symobol</span>
+                    <input type="checkbox" id="check-Symbols" onclick="genSymbols()">
+                    <span>Include Symbols</span>
                 </div>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="check-Numbers" onclick="genNumbers()">
                     <span>Include Numbers</span>
                 </div>
             </div>
@@ -30,8 +34,9 @@
             </div>
             <hr style="border: 1px solid white;">
             <div class="password-boxes">
-                <div id="output-one" >Password</div>
-                <button id="copy-btn" onclick="Copy">Copy Password</button>
+                <div id="output-pass" >Password</div>
+                <button id="copy-btn" onclick="CopyButton">Copy Password</button>
+                <p id="pass-strength" style="margin-top: 0;">Password Strength: </p>
             </div>
             <script src="index.js"></script>
         </div>

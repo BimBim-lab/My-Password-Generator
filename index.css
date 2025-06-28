@@ -11,6 +11,7 @@ body {
     margin: 40px auto;
     background-color: rgb(65, 65, 168);
     border-radius: 14px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 h1{
     margin: 0;
@@ -39,7 +40,7 @@ button {
     width: 100%;
 }
 
-#output-one {
+#output-pass {
    background-color: #1d2635;
     text-align: center;
     color: #eef3f8;
@@ -58,9 +59,12 @@ width: 100%;
 #security-checklist{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 10px;
-    padding: 5;
+    padding: 15;
+    background-color: #1d2635;
+    border-radius: 8px; 
+    color: #eef3f8;
 }
 
 input[type="range"]{
@@ -70,3 +74,4 @@ input[type="range"]{
 input[type="checkbox"]{
     cursor: pointer;
 }
+
