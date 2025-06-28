@@ -98,8 +98,8 @@ function outputPassword(displayPassword){
 
 function copyButton(){
     const text = document.getElementById("output-pass").textContent
-    navigator.clipboard.writeText(text).then(() => {
-    alert("Password copied to clipboard!")})
+    navigator.clipboard.writeText(text)
+    alert("Password Copied to Clipboard")
 }
 
 function checkStrength(password){
